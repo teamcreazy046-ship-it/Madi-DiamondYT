@@ -1,0 +1,111 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Madi Diamond YT</title><link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><text y='52' font-size='52'>💎</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<style>
+:root{--bg:#05070d;--card:#0c111c;--line:#1b2740;--b:#2f6bff;--b2:#5ab0ff;--t:#eaf0ff;--m:#8a97b5;--ok:#2ee59d;--bad:#ff5d73}
+*{box-sizing:border-box;margin:0}body{background:var(--bg);color:var(--t);font:15px Inter,sans-serif;padding:0 0 96px}
+h1,h2,h3,.rj{font-family:Rajdhani,sans-serif}button,input,select{font:inherit;color:inherit}
+header{display:flex;align-items:center;gap:10px;padding:12px 16px;position:sticky;top:0;background:#05070dee;backdrop-filter:blur(8px);z-index:5;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:8px;font:700 22px Rajdhani;letter-spacing:.5px;flex:1;cursor:pointer}.brand b{color:var(--b2)}
+.ic{background:none;border:0;position:relative;cursor:pointer;font-size:20px}.dot{position:absolute;top:-2px;right:-4px;background:var(--b);width:10px;height:10px;border-radius:50%}
+main{max-width:720px;margin:auto;padding:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;margin-bottom:14px}
+.btn{background:linear-gradient(135deg,#1f5bff,#3b8bff);border:0;border-radius:14px;padding:13px 18px;font-weight:600;cursor:pointer;width:100%;box-shadow:0 0 22px #2f6bff55}.btn.s{background:none;border:1px solid var(--b);box-shadow:none;color:var(--b2)}.btn.sm{width:auto;padding:7px 12px;font-size:13px}.btn.r{background:#3a1520;color:var(--bad);box-shadow:none}.btn:disabled{opacity:.5}
+input,select{width:100%;background:#0a1220;border:1px solid var(--line);border-radius:12px;padding:13px;margin:6px 0}input:focus{outline:2px solid var(--b)}
+.hero{border-radius:20px;padding:24px;background:radial-gradient(circle at 85% 20%,#2f6bff66,transparent 55%),#0a1020;border:1px solid var(--b)}.hero h1{font-size:40px;line-height:1}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.game{cursor:pointer;padding:0;overflow:hidden}.game .art{height:110px;display:grid;place-items:center;font-size:44px}.game p{padding:10px 12px;font:700 18px Rajdhani}
+.pack{cursor:pointer;text-align:left;display:flex;gap:10px;align-items:center;padding:12px}.pack.on{border-color:var(--b2);box-shadow:0 0 18px #2f6bff66}.pack small{color:var(--m);display:block}
+.pay{display:flex;gap:8px;flex-wrap:wrap}.pay button{flex:1;background:#0a1220;border:1px solid var(--line);border-radius:12px;padding:11px;cursor:pointer;min-width:90px}.pay .on{border-color:var(--b2);background:#10224a}
+nav{position:fixed;left:10px;right:10px;bottom:10px;max-width:700px;margin:auto;display:flex;background:#0a1020f2;border:1px solid var(--b);border-radius:24px;padding:6px;z-index:5;box-shadow:0 0 25px #2f6bff44}
+nav button{flex:1;background:none;border:0;padding:8px 2px;border-radius:18px;font-size:12px;color:var(--m);cursor:pointer}nav button span{display:block;font-size:20px}nav .on{background:linear-gradient(135deg,#1f5bff,#3b8bff);color:#fff}
+.tag{padding:3px 10px;border-radius:99px;font-size:12px;background:#10224a;color:var(--b2)}.done{background:#0f3325;color:var(--ok)}.rejected{background:#3a1520;color:var(--bad)}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px}.m{color:var(--m)}.tabs{display:flex;gap:6px;overflow:auto;margin-bottom:12px}.tabs button{white-space:nowrap}
+.ov{position:fixed;inset:0;background:#05070df5;z-index:20;display:grid;place-items:center;text-align:center;padding:20px}
+.draw{stroke-dasharray:400;stroke-dashoffset:400;animation:dr 1.6s .2s forwards}@keyframes dr{to{stroke-dashoffset:0}}
+.ci{stroke-dasharray:6 10;animation:fl 1s linear infinite}@keyframes fl{to{stroke-dashoffset:-32}}
+.pulse{animation:pu 1.4s ease-in-out infinite}@keyframes pu{50%{filter:drop-shadow(0 0 18px #5ab0ff)}}
+#intro{transition:opacity .6s}.step{opacity:.35;transition:.4s;margin:6px 0}.step.on{opacity:1;color:var(--ok)}
+table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:8px 4px;border-bottom:1px solid var(--line);text-align:left}
+#toast{position:fixed;top:70px;left:50%;transform:translateX(-50%);background:#10224a;border:1px solid var(--b);padding:10px 16px;border-radius:12px;z-index:30;display:none}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important}}
+</style></head><body>
+<div id="intro" class="ov"><div>
+<svg width="300" height="220" viewBox="0 0 300 220" fill="none" stroke="#2f6bff" stroke-width="2">
+<path class="ci" d="M0 40H70V90H110M300 40H230V90H190M0 180H60V140H110M300 180H240V140H190M150 0V60"/>
+<circle cx="70" cy="90" r="4" fill="#5ab0ff"/><circle cx="230" cy="90" r="4" fill="#5ab0ff"/><circle cx="60" cy="140" r="4" fill="#5ab0ff"/><circle cx="240" cy="140" r="4" fill="#5ab0ff"/>
+<g transform="translate(100 60) scale(1.6)" class="pulse"><path class="draw" stroke="#5ab0ff" stroke-width="6" stroke-linejoin="round" d="M6 54V10L32 38L58 10V54"/><path class="draw" stroke="#fff" stroke-width="4" d="M44 14L58 0L72 14"/></g></svg>
+<h1 style="font-size:42px;letter-spacing:2px;margin-top:10px">MADI <span style="color:var(--b2)">DIAMOND</span> YT</h1><p class="m">Recargas de diamantes al instante</p></div></div>
+<div id="toast"></div>
+<header><div class="brand" onclick="go('home')"><svg width="34" height="34" viewBox="0 0 80 64" fill="none" stroke-linejoin="round"><path d="M6 54V10L32 38L58 10V54" stroke="#3b8bff" stroke-width="9"/><path d="M44 14L58 0L72 14" stroke="#fff" stroke-width="5"/></svg><span>MADI <b>DIAMOND</b> YT</span></div>
+<button class="ic" onclick="go('notices')">🔔<i id="dot" class="dot" hidden></i></button></header>
+<main id="app"></main>
+<nav id="nav"></nav>
+<script>
+// ====== CONFIGURA ESTO ======
+const SUPABASE_URL="https://zxciqnlgnlsxbcowcmsx.supabase.co",SUPABASE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp4Y2lxbmxnbmxzeGJjb3djbXN4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTMzODI2MTcsImV4cCI6MjEwODk1ODYxN30.J5h_d66IALJBcXoQ5Z7giggE0ibScmkZejck0A3l4ZA";
+const WA="58191290",ADMIN="adanreyricardo@gmail.com";
+// ============================
+const db=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
+const GAMES={ff:{n:"Free Fire",e:"🔥",u:"💎 Diamantes",p:[[110,.79],[341,2.4],[572,4],[1166,8.2],[2398,16.5],[6160,41]]},
+rb:{n:"Roblox",e:"🧱",u:"R$ Robux",p:[[400,4.99],[800,9.99],[1700,19.99],[4500,49.99]]},
+dls:{n:"DLS",e:"⚽",u:"🪙 Monedas",p:[[1000,1.5],[2500,3.5],[6000,7.5],[15000,17]]}};
+const M=`<svg width="16" height="16" viewBox="0 0 80 64" fill="none" style="vertical-align:-2px"><path d="M6 54V10L32 38L58 10V54" stroke="#3b8bff" stroke-width="12" stroke-linejoin="round"/></svg>`;
+const $=s=>document.querySelector(s),esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let me=null,view="home",sel={g:"ff",i:0,m:"credits"},tab="orders";
+const toast=t=>{const e=$("#toast");e.textContent=t;e.style.display="block";setTimeout(()=>e.style.display="none",3200)};
+async function load(){const{data:{session}}=await db.auth.getSession();me=null;
+if(session){const{data}=await db.from("profiles").select("*").eq("id",session.user.id).single();me=data}
+nav();if(me&&me.banned){await db.auth.signOut();me=null;toast("Cuenta baneada")}render();
+db.from("notices").select("id",{count:"exact",head:true}).then(r=>$("#dot").hidden=!r.count)}
+function nav(){const t=[["home","💎","Inicio"],["orders","📋","Órdenes"],["wallet","👛","Créditos"],["me","👤",me?"Perfil":"Entrar"]];if(me?.role==="admin")t.push(["admin","🛡️","Admin"]);
+$("#nav").innerHTML=t.map(x=>`<button class="${view===x[0]?"on":""}" onclick="go('${x[0]}')"><span>${x[1]}</span>${x[2]}</button>`).join("")}
+function go(v){view=v;nav();render();scrollTo(0,0)}
+function render(){const f={home,game,orders,wallet,me:prof,auth,verify,notices,admin}[view];$("#app").innerHTML="";f()}
+const out=h=>$("#app").innerHTML=h;
+function home(){out(`<div class="hero"><h1>Recarga tus juegos<br>en segundos</h1><p class="m" style="margin:10px 0">Diamantes, Robux y monedas. Paga con ${M} créditos, PayPal o Zelle.</p><button class="btn sm" onclick="go('auth')" ${me?"hidden":""}>Crear cuenta</button></div>
+<h2 style="margin:18px 0 10px">Juegos</h2><div class="grid">${Object.entries(GAMES).map(([k,g])=>`<div class="card game" onclick="sel.g='${k}';sel.i=0;go('game')"><div class="art" style="background:radial-gradient(circle,#2f6bff55,#0a1020)">${g.e}</div><p>${g.n}</p></div>`).join("")}</div>
+<div class="card row" style="margin-top:6px"><span>⚡ Entrega rápida · 🔒 Pago seguro</span><a href="https://wa.me/${WA}" style="color:var(--b2)">Soporte ${WA}</a></div>`)}
+function game(){const g=GAMES[sel.g],p=g.p[sel.i];out(`<h2>${g.e} ${g.n}</h2>
+<div class="card"><b>Player ID</b><input id="pid" placeholder="Introduce tu ID"></div>
+<div class="card"><b>Método de pago</b><div class="pay" style="margin-top:8px">${[["credits","Créditos"],["paypal","PayPal"],["zelle","Zelle"]].map(m=>`<button class="${sel.m===m[0]?"on":""}" onclick="sel.m='${m[0]}';game()">${m[0]==="credits"?M+" ":""}${m[1]}</button>`).join("")}</div>
+${sel.m!=="credits"?`<p class="m" style="margin-top:8px">Haz el pago por ${sel.m==="paypal"?"PayPal":"Zelle"} y envía el comprobante por WhatsApp al ${WA}. Tu pedido se aprobará al confirmarlo.</p>`:""}</div>
+<div class="grid">${g.p.map((x,i)=>`<div class="card pack ${i===sel.i?"on":""}" onclick="sel.i=${i};game()"><span style="font-size:28px">${g.u.split(" ")[0]}</span><div><b class="rj" style="font-size:18px">${x[0]} ${g.u.split(" ")[1]}</b><small>$${x[1].toFixed(2)} USD</small></div></div>`).join("")}</div>
+<button class="btn" onclick="buy()">Comprar ${p[0]} ${g.u.split(" ")[1]} · $${p[1].toFixed(2)}</button>`)}
+async function buy(){if(!me)return go("auth");if(!me.verified)return go("verify");const pid=$("#pid").value.trim();if(!pid)return toast("Escribe tu Player ID");
+const g=GAMES[sel.g],p=g.p[sel.i],pk=p[0]+" "+g.u.split(" ")[1];
+const o=document.createElement("div");o.className="ov";o.innerHTML=`<div><svg width="260" height="130" viewBox="0 0 260 130" fill="none" stroke="#2f6bff" stroke-width="2"><path class="ci" d="M0 20H60V65H100M260 20H200V65H160M0 110H50V90H100M260 110H210V90H160"/><g transform="translate(95 35) scale(.9)" class="pulse"><path d="M6 54V10L32 38L58 10V54" stroke="#5ab0ff" stroke-width="7" stroke-linejoin="round"/></g></svg><h2 id="pt">Procesando pedido…</h2><div id="st"><div class="step">① Pedido recibido</div><div class="step">② Verificando pago</div><div class="step">③ Preparando recarga</div></div></div>`;document.body.append(o);
+const ss=[...o.querySelectorAll(".step")];ss[0].classList.add("on");setTimeout(()=>ss[1].classList.add("on"),900);
+const{data,error}=await db.rpc("create_order",{g:g.n,p:pk,pr:p[1],pid,m:sel.m});
+await new Promise(r=>setTimeout(r,2000));ss[2].classList.add("on");await new Promise(r=>setTimeout(r,900));
+if(error){o.remove();return toast(error.message)}
+o.querySelector("#pt").textContent="✅ Pedido en proceso";o.querySelector("#st").innerHTML=`<p class="m">Orden #${data} · te avisaremos al completarse</p><button class="btn" style="margin-top:14px" id="ok">Ver mis órdenes</button>`;
+o.querySelector("#ok").onclick=async()=>{o.remove();await load();go("orders")}}
+async function orders(){if(!me)return go("auth");const{data}=await db.from("orders").select("*").eq("user_id",me.id).order("id",{ascending:false});
+const L={pending:"En proceso",done:"Completada",rejected:"Rechazada"};
+out(`<h2 style="margin-bottom:12px">Mis órdenes</h2>${(data||[]).map(o=>`<div class="card row"><div><b>${esc(o.pack)}</b><br><span class="m">${esc(o.game)} · ID ${esc(o.player_id)} · #${o.id}</span></div><div style="text-align:right">$${o.price}<br><span class="tag ${o.status}">${L[o.status]}</span></div></div>`).join("")||'<p class="m">Aún no tienes pedidos.</p>'}`)}
+function wallet(){if(!me)return go("auth");out(`<div class="hero"><span class="tag">Saldo disponible</span><h1 style="margin-top:10px">${Number(me.credits).toFixed(2)} ${M}</h1><p class="m">1 crédito = 1 USD</p></div><a href="https://wa.me/${WA}?text=${encodeURIComponent("Hola, quiero recargar créditos. Mi correo: "+me.email)}"><button class="btn" style="margin-top:14px">Añadir créditos por WhatsApp</button></a>`)}
+function prof(){if(!me)return go("auth");out(`<div class="card"><h2>${esc(me.name)}</h2><p class="m">${esc(me.email)} · ${esc(me.phone)}</p><p style="margin:8px 0"><span class="tag">${me.role==="admin"?"Admin":"Cliente"}</span> <span class="tag ${me.verified?"done":"rejected"}">${me.verified?"Verificado":"Sin verificar"}</span></p>${me.verified?"":'<button class="btn s" onclick="go(\'verify\')">Verificar cuenta</button>'}</div><button class="btn r" onclick="db.auth.signOut().then(()=>{view=\'home\';load()})">Cerrar sesión</button>`)}
+let reg=false;
+function auth(){out(`<div class="card"><div class="pay"><button class="${reg?"":"on"}" onclick="reg=false;auth()">Iniciar sesión</button><button class="${reg?"on":""}" onclick="reg=true;auth()">Crear cuenta</button></div>
+${reg?'<input id="n" placeholder="Nombre"><input id="ph" type="tel" placeholder="Número (con código de país)">':""}<input id="em" type="email" placeholder="Correo"><input id="pw" type="password" placeholder="Contraseña (mín. 6)"><button class="btn" style="margin-top:8px" onclick="doAuth()">${reg?"Crear cuenta":"Entrar"}</button></div>`)}
+async function doAuth(){const email=$("#em").value.trim(),password=$("#pw").value;let r;
+if(reg){const name=$("#n").value.trim(),phone=$("#ph").value.trim();if(!name||!phone)return toast("Completa todos los campos");r=await db.auth.signUp({email,password,options:{data:{name,phone}}})}else r=await db.auth.signInWithPassword({email,password});
+if(r.error)return toast(r.error.message);await load();view=me?.verified?"home":"verify";nav();render()}
+function verify(){if(!me)return go("auth");out(`<div class="card"><h2>Verifica tu cuenta</h2><p class="m" style="margin:8px 0">Toca el botón, envíanos el mensaje por WhatsApp y te daremos tu código de 6 dígitos.</p><a href="https://wa.me/${WA}?text=${encodeURIComponent("Hola, quiero mi código de verificación. Correo: "+me.email)}" target="_blank"><button class="btn">Pedir código por WhatsApp</button></a><input id="cd" inputmode="numeric" maxlength="6" placeholder="Código de 6 dígitos"><button class="btn s" onclick="doVer()">Confirmar código</button></div>`)}
+async function doVer(){const{data}=await db.rpc("verify_me",{c:$("#cd").value.trim()});if(!data)return toast("Código incorrecto");toast("¡Cuenta verificada!");await load();go("home")}
+async function notices(){const{data}=await db.from("notices").select("*").order("id",{ascending:false});out(`<h2 style="margin-bottom:12px">Avisos</h2>${(data||[]).map(n=>`<div class="card"><b>${esc(n.title)}</b><p class="m">${esc(n.body)}</p></div>`).join("")||'<p class="m">Sin avisos.</p>'}`);$("#dot").hidden=true}
+async function admin(){if(me?.role!=="admin")return go("home");const T=[["orders","Pedidos"],["users","Clientes"],["credits","Créditos"],["notes","Avisos"]];
+let h=`<h2 style="margin-bottom:10px">🛡️ Panel admin</h2><div class="tabs">${T.map(t=>`<button class="btn sm ${tab===t[0]?"":"s"}" onclick="tab='${t[0]}';admin()">${t[1]}</button>`).join("")}</div>`;
+if(tab==="orders"){const{data}=await db.from("orders").select("*,profiles(email,name)").order("id",{ascending:false}).limit(60);
+h+=(data||[]).map(o=>`<div class="card"><div class="row"><b>#${o.id} · ${esc(o.pack)}</b><span class="tag ${o.status}">${o.status}</span></div><p class="m">${esc(o.game)} · ID ${esc(o.player_id)} · $${o.price} · ${esc(o.method)}<br>${esc(o.profiles?.name)} (${esc(o.profiles?.email)})</p>${o.status==="pending"?`<div class="row" style="margin-top:8px"><button class="btn sm" onclick="ord(${o.id},true)">Aceptar</button><button class="btn sm r" onclick="ord(${o.id},false)">Rechazar</button></div>`:""}</div>`).join("")}
+if(tab==="users"){const{data}=await db.from("profiles").select("*").order("created_at",{ascending:false});const cs=(await db.from("codes").select("*")).data||[];
+h+=(data||[]).map(u=>`<div class="card"><b>${esc(u.name)}</b> <span class="tag">${u.role}</span> ${u.verified?'<span class="tag done">verificado</span>':`<span class="tag rejected">código ${cs.find(c=>c.user_id===u.id)?.code||""}</span>`}${u.banned?' <span class="tag rejected">baneado</span>':""}<p class="m">${esc(u.email)} · ${esc(u.phone)} · ${Number(u.credits).toFixed(2)} créditos</p><div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px"><button class="btn sm s" onclick="fl('${u.id}','banned','${!u.banned}')">${u.banned?"Desbanear":"Banear"}</button>${u.verified?"":`<button class="btn sm s" onclick="fl('${u.id}','verified','true')">Verificar</button>`}<button class="btn sm s" onclick="fl('${u.id}','role','${u.role==="admin"?"user":"admin"}')">${u.role==="admin"?"Quitar admin":"Hacer admin"}</button></div></div>`).join("")}
+if(tab==="credits")h+=`<div class="card"><input id="ce" type="email" placeholder="Correo del cliente"><input id="ca" type="number" step="0.01" placeholder="Cantidad (usa − para quitar)"><button class="btn" onclick="cr()">Aplicar créditos</button></div>`;
+if(tab==="notes"){const{data}=await db.from("notices").select("*").order("id",{ascending:false});h+=`<div class="card"><input id="nt" placeholder="Título"><input id="nb" placeholder="Mensaje"><button class="btn" onclick="nn()">Publicar aviso</button></div>`+(data||[]).map(n=>`<div class="card row"><div><b>${esc(n.title)}</b><p class="m">${esc(n.body)}</p></div><button class="btn sm r" onclick="dn(${n.id})">✕</button></div>`).join("")}
+out(h)}
+const run=async(p,ok)=>{const{error}=await p;if(error)return toast(error.message);toast(ok);admin()};
+const ord=(id,ok)=>run(db.rpc("admin_order",{oid:id,ok}),"Listo"),fl=(uid,f,v)=>run(db.rpc("admin_flag",{uid,f,v}),"Actualizado");
+const cr=()=>run(db.rpc("admin_credit",{em:$("#ce").value.trim(),amt:parseFloat($("#ca").value)}),"Créditos aplicados");
+const nn=()=>run(db.from("notices").insert({title:$("#nt").value,body:$("#nb").value}),"Aviso publicado"),dn=id=>run(db.from("notices").delete().eq("id",id),"Eliminado");
+setTimeout(()=>{const i=$("#intro");i.style.opacity=0;setTimeout(()=>i.remove(),600)},3200);
+load();
+</script></body></html>
