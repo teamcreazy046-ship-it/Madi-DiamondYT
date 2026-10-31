@@ -1,38 +1,39 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Madi Diamond YT</title><link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><text y='52' font-size='52'>💎</text></svg>">
+<!DOCTYPE html><html lang="es"><head><script>try{if(localStorage.theme==="dark")document.documentElement.dataset.theme="dark"}catch(e){}</script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Madi Diamond YT</title><link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><text y='52' font-size='52'>💎</text></svg>">
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
 <style>
-:root{--bg:#f3f6fd;--card:#fff;--line:#dbe3f3;--b:#2f6bff;--b2:#1d5af0;--t:#0d1b3a;--m:#5d6b8a;--ok:#0f9d63;--bad:#e0314b}
+:root{--bg:#f3f6fd;--card:#fff;--line:#dbe3f3;--b:#2f6bff;--b2:#1d5af0;--t:#0d1b3a;--m:#5d6b8a;--ok:#0f9d63;--bad:#e0314b;--ln:#111;--in:#f1f5fe;--soft:#e3ecff;--hero:#eaf1ff;--nav:#eaf1fff2;--hd:#ffffffee;--ovbg:#f3f6fdf5;--okbg:#d8f7e9;--badbg:#ffe0e5}
+:root[data-theme=dark]{--bg:#05070d;--card:#0c111c;--line:#1b2740;--b2:#5ab0ff;--t:#eaf0ff;--m:#8a97b5;--ok:#2ee59d;--bad:#ff5d73;--ln:#e8eefc;--in:#0a1220;--soft:#10224a;--hero:#0a1020;--nav:#0a1020f2;--hd:#05070dee;--ovbg:#05070df5;--okbg:#0f3325;--badbg:#3a1520;color-scheme:dark}
 *{box-sizing:border-box;margin:0}body{background:var(--bg);color:var(--t);font:15px Inter,sans-serif;padding:0 0 96px}
 h1,h2,h3,.rj{font-family:Rajdhani,sans-serif}button,input,select{font:inherit;color:inherit}
-header{display:flex;align-items:center;gap:10px;padding:12px 16px;position:sticky;top:0;background:#ffffffee;backdrop-filter:blur(8px);z-index:5;border-bottom:1px solid var(--line)}
+header{display:flex;align-items:center;gap:10px;padding:12px 16px;position:sticky;top:0;background:var(--hd);backdrop-filter:blur(8px);z-index:5;border-bottom:1px solid var(--line)}
 .brand{display:flex;align-items:center;gap:8px;font:700 22px Rajdhani;letter-spacing:.5px;flex:1;cursor:pointer}.brand b{color:#e0192d}
 .ic{background:none;border:0;position:relative;cursor:pointer;font-size:20px}.dot{position:absolute;top:-2px;right:-4px;background:var(--b);width:10px;height:10px;border-radius:50%}
 main{max-width:720px;margin:auto;padding:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;margin-bottom:14px}
-.btn{color:#fff;background:linear-gradient(135deg,#1f5bff,#3b8bff);border:0;border-radius:14px;padding:13px 18px;font-weight:600;cursor:pointer;width:100%;box-shadow:0 0 22px #2f6bff55}.btn.s{background:none;border:1px solid var(--b);box-shadow:none;color:var(--b2)}.btn.sm{width:auto;padding:7px 12px;font-size:13px}.btn.r{background:#ffe0e5;color:var(--bad);box-shadow:none}.btn:disabled{opacity:.5}
-input,select{width:100%;background:#f1f5fe;border:1px solid var(--line);border-radius:12px;padding:13px;margin:6px 0}input:focus{outline:2px solid var(--b)}
-.hero{border-radius:20px;padding:24px;background:radial-gradient(circle at 85% 20%,#2f6bff66,transparent 55%),#eaf1ff;border:1px solid var(--b)}.hero h1{font-size:40px;line-height:1}
+.btn{color:#fff;background:linear-gradient(135deg,#1f5bff,#3b8bff);border:0;border-radius:14px;padding:13px 18px;font-weight:600;cursor:pointer;width:100%;box-shadow:0 0 22px #2f6bff55}.btn.s{background:none;border:1px solid var(--b);box-shadow:none;color:var(--b2)}.btn.sm{width:auto;padding:7px 12px;font-size:13px}.btn.r{background:var(--badbg);color:var(--bad);box-shadow:none}.btn:disabled{opacity:.5}
+input,select{width:100%;background:var(--in);border:1px solid var(--line);border-radius:12px;padding:13px;margin:6px 0}input:focus{outline:2px solid var(--b)}
+.hero{border-radius:20px;padding:24px;background:radial-gradient(circle at 85% 20%,#2f6bff66,transparent 55%),var(--hero);border:1px solid var(--b)}.hero h1{font-size:40px;line-height:1}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.game{cursor:pointer;padding:0;overflow:hidden}.game .art{height:110px;display:grid;place-items:center;font-size:44px}.game p{padding:10px 12px;font:700 18px Rajdhani}
 .pack{cursor:pointer;text-align:left;display:flex;gap:10px;align-items:center;padding:12px}.pack.on{border-color:var(--b2);box-shadow:0 0 18px #2f6bff66}.pack small{color:var(--m);display:block}
-.pay .on{border-color:var(--b2);background:#e3ecff}
-nav{position:fixed;left:10px;right:10px;bottom:10px;max-width:700px;margin:auto;display:flex;background:#eaf1fff2;border:1px solid var(--b);border-radius:24px;padding:6px;z-index:5;box-shadow:0 0 25px #2f6bff44}
+.pay .on{border-color:var(--b2);background:var(--soft)}
+nav{position:fixed;left:10px;right:10px;bottom:10px;max-width:700px;margin:auto;display:flex;background:var(--nav);border:1px solid var(--b);border-radius:24px;padding:6px;z-index:5;box-shadow:0 0 25px #2f6bff44}
 nav button{flex:1;background:none;border:0;padding:8px 2px;border-radius:18px;font-size:12px;color:var(--m);cursor:pointer}nav button span{display:block;font-size:20px}nav .on{background:linear-gradient(135deg,#1f5bff,#3b8bff);color:#fff}
-.tag{padding:3px 10px;border-radius:99px;font-size:12px;background:#e3ecff;color:var(--b2)}.done{background:#d8f7e9;color:var(--ok)}.rejected{background:#ffe0e5;color:var(--bad)}
+.tag{padding:3px 10px;border-radius:99px;font-size:12px;background:var(--soft);color:var(--b2)}.done{background:var(--okbg);color:var(--ok)}.rejected{background:var(--badbg);color:var(--bad)}
 .row{display:flex;justify-content:space-between;align-items:center;gap:8px}.m{color:var(--m)}.tabs{display:flex;gap:6px;overflow:auto;margin-bottom:12px}.tabs button{white-space:nowrap}
-.ov{position:fixed;inset:0;background:#f3f6fdf5;z-index:20;display:grid;place-items:center;text-align:center;padding:20px}
+.ov{position:fixed;inset:0;background:var(--ovbg);z-index:20;display:grid;place-items:center;text-align:center;padding:20px}
 .draw{stroke-dasharray:400;stroke-dashoffset:400;animation:dr 1.6s .2s forwards}@keyframes dr{to{stroke-dashoffset:0}}
 .ci{stroke-dasharray:6 10;animation:fl 1s linear infinite}@keyframes fl{to{stroke-dashoffset:-32}}
 .pulse{animation:pu 1.4s ease-in-out infinite}@keyframes pu{50%{filter:drop-shadow(0 0 18px #5ab0ff)}}
 #intro{transition:opacity .6s}.step{opacity:.35;transition:.4s;margin:6px 0}.step.on{opacity:1;color:var(--ok)}
 table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:8px 4px;border-bottom:1px solid var(--line);text-align:left}
-#toast{position:fixed;top:70px;left:50%;transform:translateX(-50%);background:#e3ecff;border:1px solid var(--b);padding:10px 16px;border-radius:12px;z-index:30;display:none}
+#toast{position:fixed;top:70px;left:50%;transform:translateX(-50%);background:var(--soft);border:1px solid var(--b);padding:10px 16px;border-radius:12px;z-index:30;display:none}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important}}
 .fl{animation:fy 3s ease-in-out infinite}@keyframes fy{50%{transform:translateY(-4px)}}@keyframes zin{from{transform:scale(.3) rotate(-10deg);opacity:0}}
 .lg{filter:drop-shadow(0 0 7px #ff3b4e)}.pi{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;font:700 17px Rajdhani;color:#fff}
-.pay{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:8px}.pay button{display:flex;flex-direction:column;align-items:center;gap:5px;background:#f1f5fe;border:1px solid var(--line);border-radius:12px;padding:10px 6px;cursor:pointer;font-size:13px}
+.pay{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:8px}.pay button{display:flex;flex-direction:column;align-items:center;gap:5px;background:var(--in);border:1px solid var(--line);border-radius:12px;padding:10px 6px;cursor:pointer;font-size:13px}
 .pack,.game{transition:transform .2s,box-shadow .2s}.pack:hover,.game:hover{transform:translateY(-3px);box-shadow:0 0 20px #2f6bff55}
 .up{display:block;text-align:center;border:2px dashed var(--b);border-radius:12px;padding:12px;margin:8px 0;color:var(--b2);cursor:pointer}.pv{width:100%;max-height:220px;object-fit:contain;border-radius:10px;margin-top:6px}
-.gi{width:100%;height:100%;object-fit:cover;display:block}.game .art{overflow:hidden}.game .gi{height:110px}textarea{width:100%;background:#f1f5fe;border:1px solid var(--line);border-radius:12px;padding:13px;margin:6px 0;color:var(--t);font:inherit}.pay small{font-size:11px}
+.gi{width:100%;height:100%;object-fit:cover;display:block}.game .art{overflow:hidden}.game .gi{height:110px}textarea{width:100%;background:var(--in);border:1px solid var(--line);border-radius:12px;padding:13px;margin:6px 0;color:var(--t);font:inherit}.pay small{font-size:11px}
 .card.game{background:linear-gradient(135deg,#ff2d3d,#9b0f20);border-color:#ff5a68}.game p{color:#fff}.card.game:hover{box-shadow:0 0 20px #ff2d3d77}
 </style></head><body>
 <svg width="0" height="0" style="position:absolute"><defs>
@@ -44,11 +45,11 @@ table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:8px 4px;b
 <clipPath id="cm"><polygon points="6,66 6,12 24,12 45,40 66,12 84,12 84,66 67,66 67,36 45,62 23,36 23,66"/></clipPath>
 </defs></svg>
 <div id="intro" class="ov"><div>
-<div style="display:grid;place-items:center"><svg width="320" height="240" viewBox="0 0 320 240" fill="none" stroke="#2f6bff" stroke-width="2" style="grid-area:1/1"><path class="ci" d="M0 40H70V90H100M320 40H250V90H220M0 200H60V150H100M320 200H260V150H220M160 0V40M0 120H50M320 120H270"/><circle cx="70" cy="90" r="4" fill="#5ab0ff"/><circle cx="250" cy="90" r="4" fill="#5ab0ff"/><circle cx="60" cy="150" r="4" fill="#5ab0ff"/><circle cx="260" cy="150" r="4" fill="#5ab0ff"/><circle cx="160" cy="120" r="92" stroke-dasharray="3 12" class="ci"/><circle cx="160" cy="120" r="76" stroke="#5ab0ff33"/></svg><div id="il" style="grid-area:1/1;animation:zin 1.3s cubic-bezier(.2,1.5,.4,1) both"></div></div>
+<div style="display:grid;place-items:center"><svg width="320" height="240" viewBox="0 0 320 240" fill="none" stroke="currentColor" stroke-width="2" style="grid-area:1/1;color:var(--ln)"><path class="ci" d="M0 40H70V90H100M320 40H250V90H220M0 200H60V150H100M320 200H260V150H220M160 0V40M0 120H50M320 120H270"/><circle cx="70" cy="90" r="4" fill="currentColor"/><circle cx="250" cy="90" r="4" fill="currentColor"/><circle cx="60" cy="150" r="4" fill="currentColor"/><circle cx="260" cy="150" r="4" fill="currentColor"/><circle cx="160" cy="120" r="92" stroke-dasharray="3 12" class="ci"/><circle cx="160" cy="120" r="76" stroke="#5ab0ff33"/></svg><div id="il" style="grid-area:1/1;animation:zin 1.3s cubic-bezier(.2,1.5,.4,1) both"></div></div>
 <h1 style="font-size:42px;letter-spacing:2px;margin-top:6px;animation:zin .8s .9s both">MADI <span style="color:#e0192d">DIAMOND</span> YT</h1><p class="m" style="animation:zin .8s 1.3s both">Recargas de diamantes al instante</p></div></div>
 <div id="toast"></div>
 <header><div class="brand" onclick="go('home')"><span id="hl"></span><span>MADI <b>DIAMOND</b> YT</span></div>
-<button class="ic" onclick="go('notices')">🔔<i id="dot" class="dot" hidden></i></button></header>
+<button class="ic" id="tg" onclick="theme()">🌙</button><button class="ic" onclick="go('notices')">🔔<i id="dot" class="dot" hidden></i></button></header>
 <main id="app"></main>
 <nav id="nav"></nav>
 <script>
@@ -63,7 +64,7 @@ let me=null,view="home",sel={g:null,o:null,m:"credits"},CAT={games:[],offers:[],
 const toast=t=>{const e=$("#toast");e.textContent=t;e.style.display="block";setTimeout(()=>e.style.display="none",3200)};
 const PM=[["saldo","Saldo móvil"],["transf","Transferencia"],["usdt","USDT"],["credits","Créditos"],["paypal","PayPal"],["zelle","Zelle"]];
 const PI={saldo:["📱","linear-gradient(135deg,#1f5bff,#5ab0ff)"],transf:["🏦","linear-gradient(135deg,#0e7a6b,#2ee59d)"],usdt:["₮","#26a17b"],paypal:["P","linear-gradient(135deg,#003087,#009cde)"],zelle:["Z","#6d1ed4"]};
-function pi(k){if(k==="credits")return `<span class="pi" style="background:#ffe0e5">${LOGO(24)}</span>`;const p=PI[k]||["•","#2f6bff"];return `<span class="pi" style="background:${p[1]}">${p[0]}</span>`}
+function pi(k){if(k==="credits")return `<span class="pi" style="background:var(--badbg)">${LOGO(24)}</span>`;const p=PI[k]||["•","#2f6bff"];return `<span class="pi" style="background:${p[1]}">${p[0]}</span>`}
 function LOGO(s,fx){return `<svg class="lg" width="${s}" height="${s*.84}" viewBox="0 -10 96 80"><polygon points="6,66 6,12 24,12 45,40 66,12 84,12 84,66 67,66 67,36 45,62 23,36 23,66" fill="url(#gm)" stroke="#9b0f20" stroke-width="1" stroke-linejoin="round"/><polygon points="6,12 24,12 45,40 45,62 23,36 23,66 6,66" fill="#fff" opacity=".16"/><polygon points="45,40 66,12 84,12 84,66 67,66 67,36 45,62" fill="#0a2a8f" opacity=".28"/><polygon points="75,-9 92,8 58,8" fill="url(#gm)"/>${fx?`<g clip-path="url(#cm)"><rect y="-10" width="18" height="80" fill="url(#gs)" transform="skewX(-18)"><animate attributeName="x" from="-30" to="120" dur="2.4s" repeatCount="indefinite"/></rect></g><circle cx="90" cy="-4" r="2.5" fill="#ff5a68"><animate attributeName="opacity" values="0;1;0" dur="1.6s" repeatCount="indefinite"/></circle>`:""}</svg>`}
 const gem=(x,y,s)=>`<g transform="translate(${x} ${y}) scale(${s})"><polygon points="18,12 46,12 58,28 32,58 6,28" fill="url(#gd)"/><polygon points="18,12 32,28 6,28" fill="#fff" opacity=".4"/><polygon points="46,12 58,28 32,28" fill="#0b3fd1" opacity=".35"/><polygon points="32,28 58,28 32,58" fill="#0a2a8f" opacity=".4"/><polygon points="18,12 46,12 58,28 32,58 6,28" fill="none" stroke="#2f6bff" stroke-width="1.2"/></g>`;
 const hex=(x,y,s)=>`<g transform="translate(${x} ${y}) scale(${s})"><polygon points="50,6 88,28 88,60 50,82 12,60 12,28" fill="url(#gr)" stroke="#e9f4ff" stroke-width="3"/><polygon points="50,18 78,34 78,56 50,72 22,56 22,34" fill="#0a1424" opacity=".55"/><text x="50" y="55" text-anchor="middle" font-family="Rajdhani" font-weight="700" font-size="26" fill="#fff">R$</text></g>`;
@@ -75,6 +76,8 @@ else if(k==="r"){if(n>=1)b+=hex(-14,12,.7);if(n>=2)b+=hex(44,12,.7);b+=hex(14,0,
 else{if(n>=1)b+=coin(-14,14,.65);if(n>=2)b+=coin(48,14,.65);b+=coin(16,0,.85)}
 return `<svg class="fl" width="${sz}" height="${sz*.9}" viewBox="0 0 100 90" style="filter:drop-shadow(0 0 8px #2f6bff99)">${b}<circle cx="88" cy="10" r="2.5" fill="#5ab0ff"><animate attributeName="opacity" values="0;1;0" dur="1.8s" repeatCount="indefinite"/></circle></svg>`}
 $('#il').innerHTML=LOGO(190,1);$('#hl').innerHTML=LOGO(40,1);
+const theme=()=>{const d=document.documentElement,n=d.dataset.theme==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.theme=n}catch(e){}$("#tg").textContent=n==="dark"?"☀️":"🌙"};
+$("#tg").textContent=document.documentElement.dataset.theme==="dark"?"☀️":"🌙";
 async function load(){const{data:{session}}=await db.auth.getSession();me=null;
 if(session){const{data}=await db.from("profiles").select("*").eq("id",session.user.id).single();me=data}
 await cat();nav();if(me&&me.banned){await db.auth.signOut();me=null;toast("Cuenta baneada")}render();
@@ -93,19 +96,19 @@ async function upl(f,dir){const ext=(f.name.split(".").pop()||"jpg").toLowerCase
 const{error}=await db.storage.from("media").upload(path,f,{contentType:f.type});if(error)return{error:error.message};return{url:db.storage.from("media").getPublicUrl(path).data.publicUrl}}
 const pf=el=>{st.file=el.files[0]||null;game()};
 function home(){out(`<div class="hero"><h1>Recarga tus juegos<br>en segundos</h1><p class="m" style="margin:10px 0">Diamantes, Robux y monedas. Paga con Saldo móvil, USDT, ${M} créditos, PayPal o Zelle.</p><button class="btn sm" onclick="go('auth')" ${me?"hidden":""}>Crear cuenta</button></div>
-<div id="today" style="margin-top:14px"></div><h2 style="margin:18px 0 10px">Juegos</h2><div class="grid">${CAT.games.map(g=>`<div class="card game" onclick="sel.g=${g.id};sel.o=null;go('game')"><div class="art" style="background:radial-gradient(circle,#2f6bff55,#eaf1ff)">${gi(g)}</div><p>${esc(g.name)}</p></div>`).join("")||'<p class="m">Aún no hay juegos.</p>'}</div>
+<div id="today" style="margin-top:14px"></div><h2 style="margin:18px 0 10px">Juegos</h2><div class="grid">${CAT.games.map(g=>`<div class="card game" onclick="sel.g=${g.id};sel.o=null;go('game')"><div class="art" style="background:radial-gradient(circle,#2f6bff55,var(--hero))">${gi(g)}</div><p>${esc(g.name)}</p></div>`).join("")||'<p class="m">Aún no hay juegos.</p>'}</div>
 <div class="card row" style="margin-top:6px"><span>⚡ Entrega rápida · 🔒 Pago seguro</span><a href="https://wa.me/${WA}" style="color:var(--b2)">Soporte ${WA}</a></div>`);if(me)todayR()}
 function game(){const g=CAT.games.find(x=>x.id==sel.g);if(!g)return go("home");const m=meth();if(!m)return out('<p class="m">No hay métodos de pago activos.</p>');sel.m=m.code;
 const os=CAT.offers.filter(o=>o.game_id==g.id);if(!os.find(o=>o.id==sel.o))sel.o=os[0]?.id;const o=os.find(x=>x.id==sel.o),lb=g.id_label||"Player ID";
 out(`<div class="card" style="padding:0;overflow:hidden;position:relative;height:130px">${gi(g)}<h2 style="position:absolute;left:14px;bottom:10px;color:#fff;text-shadow:0 2px 8px #000">${esc(g.name)}</h2></div>
 <div class="card"><b>${esc(lb)}</b><input type="${/correo|email/i.test(lb)?"email":"text"}" value="${esc(st.pid)}" oninput="st.pid=this.value" placeholder="Introduce tu ${esc(lb.toLowerCase())}"></div>
 <div class="card"><b>Método de pago</b><div class="pay" style="margin-top:8px">${CAT.methods.map(x=>`<button class="${x.code===m.code?"on":""}" onclick="sel.m='${esc(x.code)}';game()">${pi(x.code,x.symbol)}${esc(x.name)}<small class="m">${esc(x.symbol)}</small></button>`).join("")}</div>
-${m.code!=="credits"?`<div class="card" style="margin:10px 0 0;background:#f1f5fe"><p style="white-space:pre-wrap">${esc(m.info)}</p><label class="up">📷 ${st.file?"Cambiar captura":"Adjuntar captura de la transferencia"}<input type="file" accept="image/*" hidden onchange="pf(this)"></label>${st.file?`<img class="pv" src="${URL.createObjectURL(st.file)}">`:""}</div>`:`<p class="m" style="margin-top:8px">Se descuenta de tu saldo de ${M} créditos.</p>`}</div>
+${m.code!=="credits"?`<div class="card" style="margin:10px 0 0;background:var(--in)"><p style="white-space:pre-wrap">${esc(m.info)}</p><label class="up">📷 ${st.file?"Cambiar captura":"Adjuntar captura de la transferencia"}<input type="file" accept="image/*" hidden onchange="pf(this)"></label>${st.file?`<img class="pv" src="${URL.createObjectURL(st.file)}">`:""}</div>`:`<p class="m" style="margin-top:8px">Se descuenta de tu saldo de ${M} créditos.</p>`}</div>
 <div class="grid">${os.map((x,i)=>`<div class="card pack ${x.id==sel.o?"on":""}" onclick="sel.o=${x.id};game()"><div>${art(g.kind||"d",i,64)}</div><div><b class="rj" style="font-size:18px">${esc(x.label)} ${esc(g.unit)}</b><small>${px(x,m)}</small></div></div>`).join("")}</div>
 <button class="btn" onclick="buy()" ${o?"":"disabled"}>${o?`Comprar ${esc(o.label)} ${esc(g.unit)} · ${px(o,m)}`:"Sin ofertas"}</button>`)}
 async function buy(){if(!me)return go("auth");if(!me.verified)return go("verify");const pid=st.pid.trim();if(!pid)return toast("Escribe tu ID o correo");const m=meth();
 if(m.code!=="credits"&&!st.file)return toast("Adjunta la captura de la transferencia");
-const o=document.createElement("div");o.className="ov";o.innerHTML=`<div><svg width="260" height="130" viewBox="0 0 260 130" fill="none" stroke="#2f6bff" stroke-width="2"><path class="ci" d="M0 20H60V65H100M260 20H200V65H160M0 110H50V90H100M260 110H210V90H160"/><g transform="translate(75 28) scale(1.3)" class="pulse">${LOGO(60)}</g></svg><h2 id="pt">Procesando pedido…</h2><div id="st"><div class="step">① Pedido recibido</div><div class="step">② Verificando pago</div><div class="step">③ Preparando recarga</div></div></div>`;document.body.append(o);
+const o=document.createElement("div");o.className="ov";o.innerHTML=`<div><svg width="260" height="130" viewBox="0 0 260 130" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--ln)"><path class="ci" d="M0 20H60V65H100M260 20H200V65H160M0 110H50V90H100M260 110H210V90H160"/><g transform="translate(75 28) scale(1.3)" class="pulse">${LOGO(60)}</g></svg><h2 id="pt">Procesando pedido…</h2><div id="st"><div class="step">① Pedido recibido</div><div class="step">② Verificando pago</div><div class="step">③ Preparando recarga</div></div></div>`;document.body.append(o);
 const ss=[...o.querySelectorAll(".step")];ss[0].classList.add("on");setTimeout(()=>ss[1].classList.add("on"),900);
 let proof=null;if(m.code!=="credits"){const u=await upl(st.file,"proofs/"+me.id);if(u.error){o.remove();return toast(u.error)}proof=u.url}
 const{data,error}=await db.rpc("create_order",{p_offer:sel.o,pid,m:m.code,proof});
